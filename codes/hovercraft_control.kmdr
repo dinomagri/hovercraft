@@ -1,0 +1,139 @@
+<!DOCTYPE UI><UI version="3.0" stdsetdef="1">
+<class>Form1</class>
+<widget class="Dialog">
+    <property name="name">
+        <cstring>Form1</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>600</width>
+            <height>480</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Form1</string>
+    </property>
+    <property name="useInternalParser">
+        <bool>true</bool>
+    </property>
+    <widget class="ExecButton">
+        <property name="name">
+            <cstring>ExecButton2_2</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>460</x>
+                <y>120</y>
+                <width>110</width>
+                <height>41</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>D&amp;ireita</string>
+        </property>
+        <property name="associations" stdset="0">
+            <stringlist>
+                <string>#!/bin/bash
+a=`exec /home/dinomagri/hovercraft/dir_esq` # Executa um programa externo e envia o resultado para a variável "a". Neste caso estamos executando um programa compilado em C++ que foi implementado para girar uma volta completa o Motor de Passo e logo após o giro, ler e mostrar o bits da porta de Status (0x379). 
+kdialog --msgbox "$a" # Mostra os bits da porta de Status 0x379 a partir do conteúdo da variável "a" ($a). A informação será mostrada na tela. Mais informações sobre o comando "kdialog" digite na linha de terminal "man kdialog". 
+</string>
+            </stringlist>
+        </property>
+    </widget>
+    <widget class="ExecButton">
+        <property name="name">
+            <cstring>ExecButton2</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>180</x>
+                <y>20</y>
+                <width>240</width>
+                <height>41</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Liga &amp;Motores M1 e M2</string>
+        </property>
+        <property name="associations" stdset="0">
+            <stringlist>
+                <string>#!/bin/bash
+exec `/home/dinomagri/hovercraft/liga` 
+ 
+</string>
+            </stringlist>
+        </property>
+    </widget>
+    <widget class="ExecButton">
+        <property name="name">
+            <cstring>ExecButton2_3</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>50</x>
+                <y>120</y>
+                <width>110</width>
+                <height>41</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Es&amp;querda</string>
+        </property>
+        <property name="associations" stdset="0">
+            <stringlist>
+                <string>#!/bin/bash
+a=`exec /home/dinomagri/hovercraft/esq_dir`
+</string>
+            </stringlist>
+        </property>
+    </widget>
+    <widget class="ExecButton">
+        <property name="name">
+            <cstring>ExecButton2_3_2</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>280</x>
+                <y>110</y>
+                <width>60</width>
+                <height>41</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>R&amp;é</string>
+        </property>
+        <property name="associations" stdset="0">
+            <stringlist>
+                <string>#!/bin/bash
+a=`exec /home/dinomagri/hovercraft/inverte` </string>
+            </stringlist>
+        </property>
+    </widget>
+    <widget class="ExecButton">
+        <property name="name">
+            <cstring>ExecButton2_4</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>190</x>
+                <y>190</y>
+                <width>240</width>
+                <height>41</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Deslig&amp;a</string>
+        </property>
+        <property name="associations" stdset="0">
+            <stringlist>
+                <string>#!/bin/bash
+a=`exec /home/dinomagri/hovercraft/desliga` 
+</string>
+            </stringlist>
+        </property>
+    </widget>
+</widget>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>
